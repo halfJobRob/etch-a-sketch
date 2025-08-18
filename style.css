@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #444aaa;
 }
 
 #grid-container {
@@ -28,4 +29,9 @@ div.square {
   flex-grow: 1;
   background-color: #ffffff;
   border: 0.1rem solid black;
+}
+
+/* Add this new class to your existing CSS */
+.hovered {
+  background-color: #333333; /* Dark gray color */
 }
