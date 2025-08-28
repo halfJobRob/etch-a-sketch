@@ -10,6 +10,21 @@ rnb.addEventListener("click", () => {
   hoverRainow();
 });
 
+const black = document.querySelector('#black');
+black.addEventListener('click', () => {
+  hoverBlack();
+})
+
+const white = document.querySelector('#white');
+white.addEventListener("click", () => {
+  hoverWhite();
+});
+
+const clear = document.querySelector('#clear');
+clear.addEventListener('click', () => {
+  clearScreen();
+})
+
 const getUserInput = function() {
   let input = prompt("Choose Grid Size 1-100");
   let parsedInput = parseInt(input);
@@ -93,4 +108,17 @@ const hoverRainow = function () {
       event.target.style.backgroundColor = createRainbow();
     }
   },true)
+}
+
+const hoverWhite = function() {
+  gridContainer.addEventListener('mouseenter', function(event) {
+    if (event.target.classList.contains('square')) {
+      event.target.style.backgroundColor = '#ffffff';
+    }
+  }, true)
+}
+
+const clearScreen = function() {
+      createGrid();
+      hoverBlack();
 }
