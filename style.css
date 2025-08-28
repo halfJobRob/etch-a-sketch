@@ -27,7 +27,8 @@ h1 {
 
 button {
   border-radius: 15px;
-  font-size: medium;
+  font-size: 1.4rem;
+  font-weight: bold;
   color: #ffffff;
   background-color: #333333;
   flex-grow: 1;
