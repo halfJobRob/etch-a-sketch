@@ -8,7 +8,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #444aaa;
+  
+}
+
+h1 {
+  font-size: 50px;
+  color: #333333;
+  margin: 1em 0;
+}
+
+.button-container {
+  display: flex;
+  width: 400px;
+  margin-bottom: 2rem;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+button {
+  border-radius: 15px;
+  font-size: medium;
+  color: #ffffff;
+  background-color: #333333;
+  flex-grow: 1;
+  padding: 0.6em;
 }
 
 #grid-container {
@@ -17,6 +40,11 @@
   height:600px;
   flex-direction: column;
   flex-wrap: wrap;
+  background-color: #a9792b;
+  padding: 2rem;
+  border: 2rem solid #a9792b;
+  border-radius: 3rem;
+  margin-bottom: 2rem;
 }
 
 div.row {
